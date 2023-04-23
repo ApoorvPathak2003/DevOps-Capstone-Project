@@ -4,7 +4,7 @@ pipeline {
      environment{
        registryCredential = 'ecr:ap-south-1:capstone_jenkins'
        appRegistry = "http://224107300631.dkr.ecr.ap-south-1.amazonaws.com/capstone_project"
-       capstoneRegistry = "arn:aws:ecs:ap-south-1:224107300631:cluster"
+       capstoneRegistry = "https://224107300631.dkr.ecr.ap-south-1.amazonaws.com"
        cluster = "Capstone_Project"
        service = "capstone_service"
    }

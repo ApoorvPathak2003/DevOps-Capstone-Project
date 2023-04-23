@@ -2,17 +2,17 @@ pipeline {
     agent any
 
      environment{
-       registryCredential = 'ecr:<zone>:<CredentialID>'
-       appRegistry = "<Registry Name>"
-       capstoneRegistry = "<Registry Url>"
-       cluster = "<Cluster Name>"
-        service = "<Service Name>"
+       registryCredential = 'ecr:AWS zone:capstone_jenkins'
+       appRegistry = "http://224107300631.dkr.ecr.ap-south-1.amazonaws.com/capstone_project"
+       capstoneRegistry = "arn:aws:ecs:ap-south-1:224107300631:cluster"
+       cluster = "Capstone_Project"
+       service = "<Service Name>"
    }
 
     stages {
         stage('Clone Website') {
             steps {
-                git url:'https://github.com/Aryanhac/Capstone-Project'
+                git url:'https://github.com/ApoorvPathak2003/DevOps-Capstone-Project'
             }
         }
 

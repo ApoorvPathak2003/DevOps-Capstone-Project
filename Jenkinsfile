@@ -5,8 +5,8 @@ pipeline {
        registryCredential = 'ecr:ap-south-1:capstone_jenkins'
        appRegistry = "224107300631.dkr.ecr.ap-south-1.amazonaws.com/capstone_project"
        capstoneRegistry = "https://224107300631.dkr.ecr.ap-south-1.amazonaws.com"
-       cluster = "Capstone_Project"
-       service = "capstone_service"
+       cluster = "CapstoneCluster"
+       service = "202051033"
    }
 
     stages {
